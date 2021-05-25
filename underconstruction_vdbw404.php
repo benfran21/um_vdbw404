@@ -15,34 +15,13 @@
 defined( 'ABSPATH' ) or die( '¡sin trampas!' );
 
 add_action('template_redirect', 'set_maintenance_template');
+define( 'PLUGIN_DIR', dirname(__FILE__).'/' );  
 
 function set_maintenance_template() {
-    $file =  plugin_dir_url( __FILE__ ).'/wp-content/plugins/um_vdbw404/maintenance.php';
-    if( ini_get('allow_url_fopen') ) {
-        if( !current_user_can('administrator') ){
-            require $file;
-            exit;
-        }
-    } else {
-        die('
-            Allow_url_fopen is disable. file_get_contents should work well <br>
-            Please edit php.ini and <br>
-            allow_url_fopen = 1 //0 for Off and 1 for On Flag <br>
-            allow_url_include = 1 //0 for Off and 1 for On Flag
-        ');
-
-        curl_get_file_contents($file);
+    if( !current_user_can('administrator') ){
+        $file = 'maintenance.php';
+        require_once $file;
+        exit;
     }
-}
 
-function curl_get_file_contents($URL)
-{
-    $c = curl_init();
-    curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($c, CURLOPT_URL, $URL);
-    $contents = curl_exec($c);
-    curl_close($c);
-
-    if ($contents) return $contents;
-    else return FALSE;
 }
