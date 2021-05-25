@@ -27,8 +27,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e9bd6",endColorstr="#005b96",GradientType=1);
 
   color: #ffffff;
-  height: 629px;
-  padding: 0% 1% 0% 9%;
+  height: 100vh;
 }
 ul {
   margin: 0;
@@ -61,13 +60,21 @@ h4 {
   margin: auto;
   overflow: hidden;
 }
+a.rrssLink {
+    cursor: pointer;
+    text-decoration: none;
+    width: 68px;
+    height: 68px;
+    z-index: 9999;
+    position: relative;
+}
 .img-thumbnail {
   background-color: transparent;
   border: 1px solid transparent;
 }
 
 .col-sm-12 {
-  padding-top: 5%;
+  padding: 5% 1% 0% 9%;
 }
 .img-thumbnail {
   width: 5%;
@@ -75,30 +82,6 @@ h4 {
 .carousel {
   position: absolute;
   bottom: 0%;
-}
-.img1 {
-  width: 63%;
-  /* position: absolute; */
-  right: 10%;
-  bottom: 0%;
-}
-.img2 {
-  width: 55%;
-  /* position: absolute; */
-  right: 0%;
-  bottom: 0%;
-}
-.img3 {
-  width: 50%;
-  /* position: absolute; */
-  right: 0%;
-  bottom: 0%;
-}
-.img4 {
-  width: 50%;
-  /* position: absolute; */
-  right: 19.6%;
-  bottom: 5.2%;
 }
 .imgFull {
   width: 70%;
@@ -108,11 +91,6 @@ h4 {
 /* Media Queries */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
-  /* maintenance */
-  body {
-    height: 640px;
-  }
   .col-sm-12 {
     padding-top: 14%;
   }
@@ -126,79 +104,24 @@ h4 {
   .img-thumbnail {
     width: 11%;
   }
-  .img1,
-  .img2,
-  .img3,
-  .img4 {
-    margin-bottom: 0%;
-  }
-  .img1 {
-    width: 88%;
-    position: absolute;
-    right: 9%;
-    bottom: 0%;
-  }
-  .img2 {
-    width: 73%;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-  }
-  .img3 {
-    width: 66%;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-  }
-  .img4 {
-    width: 66%;
-    position: absolute;
-    right: 26.2%;
-    bottom: 1.7%;
+  .imgFull {
+    width: 100%;
+    position: relative;
+    left: 0;
   }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-  /* maintenance */
-  body {
-    height: 1024px;
-  }
   .col-sm-12 {
     padding-top: 11%;
   }
   .img-thumbnail {
     width: 9%;
   }
-  .img1,
-  .img2,
-  .img3,
-  .img4 {
-    margin-bottom: 0%;
-  }
-  .img1 {
-    width: 88%;
-    position: absolute;
-    right: 9%;
-    bottom: 0%;
-  }
-  .img2 {
-    width: 73%;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-  }
-  .img3 {
-    width: 66%;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-  }
-  .img4 {
-    width: 66%;
-    position: absolute;
-    right: 26.1%;
-    bottom: 2.3%;
+  .imgFull {
+    width: 100%;
+    position: relative;
+    left: 0;
   }
 }
