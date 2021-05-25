@@ -1,0 +1,204 @@
+/* Estilos globales */
+@import "./fonts/stylesheet.css";
+
+body {
+  overflow: hidden;
+  font: 12px "Mont";
+  margin: 0;
+  background: rgb(30, 155, 214);
+  background: -moz-linear-gradient(
+    -154deg,
+    rgba(30, 155, 214, 1) 0%,
+    rgba(0, 117, 189, 1) 86%,
+    rgba(0, 91, 150, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -154deg,
+    rgba(30, 155, 214, 1) 0%,
+    rgba(0, 117, 189, 1) 86%,
+    rgba(0, 91, 150, 1) 100%
+  );
+  background: linear-gradient(
+    -154deg,
+    rgba(30, 155, 214, 1) 0%,
+    rgba(0, 117, 189, 1) 86%,
+    rgba(0, 91, 150, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e9bd6",endColorstr="#005b96",GradientType=1);
+
+  color: #ffffff;
+  height: 629px;
+  padding: 0% 1% 0% 9%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-weight: normal;
+  font-size: calc(1.4rem + 3.2vw);
+  margin-top: -1%;
+  margin-bottom: 7%;
+}
+h1 {
+  font-weight: 800;
+  font-size: calc(1.8rem + 4.3vw);
+  margin-top: -7%;
+}
+h5 {
+  font-weight: normal;
+  font-size: calc(1.4rem + 1.1vw);
+  margin-top: -2%;
+  margin-bottom: -0.5%;
+}
+h4 {
+  font-weight: 800;
+  font-size: calc(1.6rem + 3.2vw);
+}
+.container-sm,
+.container-md {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.img-thumbnail {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.col-sm-12 {
+  padding-top: 5%;
+}
+.img-thumbnail {
+  width: 5%;
+}
+.carousel {
+  position: absolute;
+  bottom: 0%;
+}
+.img1 {
+  width: 63%;
+  /* position: absolute; */
+  right: 10%;
+  bottom: 0%;
+}
+.img2 {
+  width: 55%;
+  /* position: absolute; */
+  right: 0%;
+  bottom: 0%;
+}
+.img3 {
+  width: 50%;
+  /* position: absolute; */
+  right: 0%;
+  bottom: 0%;
+}
+.img4 {
+  width: 50%;
+  /* position: absolute; */
+  right: 19.6%;
+  bottom: 5.2%;
+}
+.imgFull {
+  width: 70%;
+  position: relative;
+  left: 30%;
+}
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  /* maintenance */
+  body {
+    height: 640px;
+  }
+  .col-sm-12 {
+    padding-top: 14%;
+  }
+  h2 {
+    margin-top: -3%;
+    margin-bottom: 15%;
+  }
+  h1 {
+    margin-top: -15%;
+  }
+  .img-thumbnail {
+    width: 11%;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    margin-bottom: 0%;
+  }
+  .img1 {
+    width: 88%;
+    position: absolute;
+    right: 9%;
+    bottom: 0%;
+  }
+  .img2 {
+    width: 73%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+  .img3 {
+    width: 66%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+  .img4 {
+    width: 66%;
+    position: absolute;
+    right: 26.2%;
+    bottom: 1.7%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  /* maintenance */
+  body {
+    height: 1024px;
+  }
+  .col-sm-12 {
+    padding-top: 11%;
+  }
+  .img-thumbnail {
+    width: 9%;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    margin-bottom: 0%;
+  }
+  .img1 {
+    width: 88%;
+    position: absolute;
+    right: 9%;
+    bottom: 0%;
+  }
+  .img2 {
+    width: 73%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+  .img3 {
+    width: 66%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+  .img4 {
+    width: 66%;
+    position: absolute;
+    right: 26.1%;
+    bottom: 2.3%;
+  }
+}
